@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width" name="viewport">
+    <style>
+        p {
+            margin: 10px !important;
+        }
+
+        p + p {
+            margin-top: 20px !important;
+        }
+
+        a {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+
+        ul {
+            width: 100% !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        .marker__wrap {
+            padding-top: 10px !important;
+            padding-left: 10px !important;
+        }
+
+        .marker-blue,
+        .marker-red {
+            width: 15px !important;
+            height: 15px !important;
+            border-radius: 50% !important;
+        }
+
+        .marker-blue {
+            background: #3d539f !important;
+        }
+
+        .marker-red {
+            background: #FD7949 !important;
+        }
+
+        .points {
+            padding-top: 10px !important;
+            padding-left: 10px !important;
+            width: 100% !important;
+        }
+
+        .tr-points {
+
+            margin: 0 5px !important;
+            width: 100% !important;
+        }
+
+        .tr-points + .tr-points {
+
+            border-top: 1px solid #000000 !important;
+        }
+
+        .table-points tr + .table-points tr {
+            margin-top: 10px !important;
+        }
+
+        .hr {
+            margin: 5px 5px;
+            border-bottom: 1px #000000 solid !important;
+        }
+
+        tr, td, tbody, table {
+            padding: 0 !important;
+            margin: 0 !important;
+            border-spacing: 0 !important;
+        }
+
+
+        .buble {
+            height: 70px !important;
+            border-radius: 500px !important;
+            background: #3d539f !important;
+        }
+
+        .buble__content {
+            padding: 20px !important;
+            text-align: center !important;
+            color: #ffffff !important;
+            font-size: 14px !important;
+        }
+
+        .button {
+            text-align: center !important;
+            vertical-align: center !important;
+
+        }
+
+        .button-blue, .button-red {
+            background: #ffffff !important;
+            transition: background-color ease 200ms, color ease 200ms !important;
+            color: #3d539f;
+        }
+
+
+        .button-red:hover {
+            color: white !important;
+            background: #fa9670 !important;
+        }
+
+        .button-blue:hover {
+            color: white !important;
+            background: #00219d !important;
+        }
+
+
+        .link {
+            font-weight: bold !important;
+            padding: 15px 0 !important;
+            display: block !important;
+            width: 100% !important;
+            text-decoration: none !important;
+            transition: all ease 200ms !important;
+            color: #3d539f !important;
+        }
+
+        .link:hover {
+            color: white !important;
+        }
+    </style>
+</head>
+
+<body style="width: 100% !important;padding: 0; margin: 0; font-family: Arial, sans-serif !important;">
+<table style="max-width: 600px !important; width: 100% !important; margin: auto !important; border: 0 !important; border-spacing: 0 !important; padding: 0 !important;  font-family: Arial, sans-serif !important; color: #ffffff !important;"
+       border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+    <tbody style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+    <tr style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+        <td style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;"><a
+                style="padding: 0 !important; margin: 0 !important;" title="site" href="https://inlibrary.ru/site/login"
+                target="_blank" rel="noopener"> <img style="display: block;"
+                                                     src="http://app.makemail.ru/media/W1siZiIsIjIwMjAvMTEvMjQvNzhkMnk0ZmZid19fXzYwMC5wbmciXV0/11ce44cae9e7d9b7/%D1%88%D0%B0%D0%BF%D0%BA%D0%B0_600.png"
+                                                     alt="" width="100%" border="0"/> </a></td>
+    </tr>
+    <tr style="background: #3d539f; color: #ffffff; padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+        <td style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+            <p style="margin: 10px !important;">[Имя руководителя], добрый день/вечер!</p>
+            <p style="margin: 10px !important; margin-top: 20px !important;">Меня зовут Ирина/Анна, я представляю
+                <strong><a style="color: #ffffff; padding: 0 !important; margin: 0 !important;" title="БМИТ"
+                           href="https://inlibrary.ru/" target="_blank" rel="noopener">Библиотеку Мастеров
+                    Интеллектуального Труда</a></strong></p>
+            <p style="margin: 10px !important; margin-top: 20px !important;">Мы &ndash; некоммерческий проект для рынка
+                k2b.<br/>Идеологи платформы - бизнес-дуэт <strong><a
+                        style="color: #ffffff; padding: 0 !important; margin: 0 !important;" title="Кубит"
+                        href="http://qbit.spb.ru/" target="_blank" rel="noopener">Кубит</a>.</strong></p>
+            <p style="margin: 10px !important; margin-top: 20px !important;">Мы предоставляем библиотечный сервис и
+                развивающую среду для тех, чьим основным активом являются знания.</p>
+            <p style="margin: 10px !important; margin-top: 20px !important;">Наша платформа работает на <strong>бесплатной</strong>
+                основе.</p>
+        </td>
+    </tr>
+    <tr style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+        <td style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+            <table style="width: 100%; padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                <tbody style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                <tr style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                    <td style="width: 50%; background: #FD7949; padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                        <table class="table-points"
+                               style="margin: 0 10px; padding: 0 !important; border-spacing: 0 !important; color: #000000!important;">
+                            <tbody style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                            <tr style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                                <td style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                                    <p style="font-size: 26px; color: #ffffff; margin: 10px 0;"><strong>Три кита
+                                        Корпоративного Центра Знаний</strong></p>
+                                </td>
+                            </tr>
+                            <tr style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                                <td style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                                    <div class="buble"
+                                         style="border-radius: 500px !important; background: #3d539f !important;">
+                                        <p class="buble__content"
+                                           style="margin: 10px 5px  !important; padding: 20px 5px !important; text-align: center !important; color: #ffffff !important; font-size: 14px !important;">
+                                            Бесплатно приобретем нужную вам литературу</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                                <td style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                                    <div class="buble"
+                                         style="border-radius: 500px !important; background: #3d539f !important;">
+                                        <p class="buble__content"
+                                           style="margin: 10px 5px  !important; padding: 20px 5px  !important; text-align: center !important; color: #ffffff !important; font-size: 14px !important;">
+                                            Поможем создать корпоративную библиотеку</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                                <td style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                                    <div class="buble"
+                                         style="border-radius: 500px !important; background: #3d539f !important;">
+                                        <p class="buble__content"
+                                           style="margin: 10px 5px  !important; padding: 20px 5px !important; text-align: center !important; color: #ffffff !important; font-size: 14px !important;">
+                                            Укрепим культуру чтения среди сотрудников</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td style="width: 50%; padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                        <table class="table-points"
+                               style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important; color: #000000!important;">
+                            <tbody>
+                            <tr class="tr-points"
+                                style="padding: 0 !important; margin: 0 5px !important; border-spacing: 0 !important; width: 100% !important;">
+                                <td class="marker__wrap"
+                                    style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important; padding-top: 10px !important; padding-left: 10px !important;">
+                                    <div class="marker marker-blue"
+                                         style="width: 15px !important; height: 15px !important; border-radius: 50% !important; background: #3d539f !important;">
+                                        &nbsp;
+                                    </div>
+                                </td>
+                                <td class="points"
+                                    style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important; padding-top: 10px !important; padding-left: 10px !important; width: 100% !important;">
+                                    <img alt=""/>Первая онлайн библиотека для тех, кто создает интеллектуальные продукты
+                                    и услуги
+                                </td>
+                            </tr>
+                            <tr style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                                <td style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;"
+                                    colspan="2">
+                                    <div class="hr"
+                                         style="margin: 5px 5px; border-bottom: 1px #000000 solid !important;">&nbsp;
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="tr-points"
+                                style="padding: 0 !important; margin: 0 5px !important; border-spacing: 0 !important; width: 100% !important;">
+                                <td class="marker__wrap"
+                                    style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important; padding-top: 10px !important; padding-left: 10px !important;">
+                                    <div class=" marker-red"
+                                         style="width: 15px !important; height: 15px !important; border-radius: 50% !important; background: #FD7949 !important;">
+                                        &nbsp;
+                                    </div>
+                                </td>
+                                <td class="points"
+                                    style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important; padding-top: 10px !important; padding-left: 10px !important; width: 100% !important;">
+                                    Коллекционируем книги по бизнесу, управлению, психологии, философии и педагогике,
+                                    даем свободный и бесплатный доступ к ним 24/7
+                                </td>
+                            </tr>
+                            <tr style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                                <td style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;"
+                                    colspan="2">
+                                    <div class="hr"
+                                         style="margin: 5px 5px; border-bottom: 1px #000000 solid !important;">&nbsp;
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="tr-points"
+                                style="padding: 0 !important; margin: 0 5px !important; border-spacing: 0 !important; width: 100% !important;">
+                                <td class="marker__wrap"
+                                    style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important; padding-top: 10px !important; padding-left: 10px !important;">
+                                    <div class=" marker-blue"
+                                         style="width: 15px !important; height: 15px !important; border-radius: 50% !important; background: #3d539f !important;">
+                                        &nbsp;
+                                    </div>
+                                </td>
+                                <td class="points"
+                                    style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important; padding-top: 10px !important; padding-left: 10px !important; width: 100% !important;">
+                                    Придумали персональную Рабочую тетрадь для работы с любой книгой
+                                </td>
+                            </tr>
+                            <tr style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                                <td style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;"
+                                    colspan="2">
+                                    <div class="hr"
+                                         style="margin: 5px 5px; border-bottom: 1px #000000 solid !important;">&nbsp;
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="tr-points"
+                                style="padding: 0 !important; margin: 0 5px !important; border-spacing: 0 !important; width: 100% !important;">
+                                <td class="marker__wrap"
+                                    style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important; padding-top: 10px !important; padding-left: 10px !important;">
+                                    <div class=" marker-red"
+                                         style="width: 15px !important; height: 15px !important; border-radius: 50% !important; background: #FD7949 !important;">
+                                        &nbsp;
+                                    </div>
+                                </td>
+                                <td class="points"
+                                    style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important; padding-top: 10px !important; padding-left: 10px !important; width: 100% !important;">
+                                    Организуем обмен опытом и знаниями между сотрудниками на нашей платформе
+                                </td>
+                            </tr>
+                            <tr style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                                <td style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;"
+                                    colspan="2">
+                                    <div class="hr"
+                                         style="margin: 5px 5px; border-bottom: 1px #000000 solid !important;">&nbsp;
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="tr-points"
+                                style="padding: 0 !important; margin: 0 5px !important; border-spacing: 0 !important; width: 100% !important;">
+                                <td class="marker__wrap"
+                                    style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important; padding-top: 10px !important; padding-left: 10px !important;">
+                                    <div class=" marker-blue"
+                                         style="width: 15px !important; height: 15px !important; border-radius: 50% !important; background: #3d539f !important;">
+                                        &nbsp;
+                                    </div>
+                                </td>
+                                <td class="points"
+                                    style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important; padding-top: 10px !important; padding-left: 10px !important; width: 100% !important;">
+                                    "Управляемое чтение" для испытательного срока и карьерного роста сотрудника
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+        <td style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+            <table style="width: 100%; padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                <tbody style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                <tr style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                    <td style="width: 50%; padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                        <p style="font-size: 26px; color: #000000; margin: 10px;">Присоединиться к Центру Знаний -
+                            легко</p>
+                        <table class="table-points"
+                               style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important; color: #000000 !important;">
+                            <tbody style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                            <tr class="tr-points"
+                                style="padding: 0 !important; margin: 0 5px !important; border-spacing: 0 !important; width: 100% !important;">
+                                <td class="marker__wrap"
+                                    style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important; padding-top: 10px !important; padding-left: 10px !important;">
+                                    <div class=" marker-blue"
+                                         style="width: 15px !important; height: 15px !important; border-radius: 50% !important; background: #3d539f !important;">
+                                        &nbsp;
+                                    </div>
+                                </td>
+                                <td class="points"
+                                    style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important; padding-top: 10px !important; padding-left: 10px !important; width: 100% !important;">
+                                    Зайти на наш <strong><a
+                                        style="color: #000000 !important; padding: 0 !important; margin: 0 !important;"
+                                        title="Кубит" href="http://inlibrary.ru" target="_blank" rel="noopener">сайт</a></strong>
+                                </td>
+                            </tr>
+                            <tr class="tr-points"
+                                style="padding: 0 !important; margin: 0 5px !important; border-spacing: 0 !important; width: 100% !important; border-top: 1px solid #000000 !important;">
+                                <td class="marker__wrap"
+                                    style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important; padding-top: 10px !important; padding-left: 10px !important;">
+                                    <div class=" marker-blue"
+                                         style="width: 15px !important; height: 15px !important; border-radius: 50% !important; background: #3d539f !important;">
+                                        &nbsp;
+                                    </div>
+                                </td>
+                                <td class="points"
+                                    style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important; padding-top: 10px !important; padding-left: 10px !important; width: 100% !important;">
+                                    Пройти индивидуальную регистрацию в соответствии с 78-ФЗ "О библиотечном деле"
+                                </td>
+                            </tr>
+                            <tr class="tr-points"
+                                style="padding: 0 !important; margin: 0 5px !important; border-spacing: 0 !important; width: 100% !important; border-top: 1px solid #000000 !important;">
+                                <td class="marker__wrap"
+                                    style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important; padding-top: 10px !important; padding-left: 10px !important;">
+                                    <div class=" marker-blue"
+                                         style="width: 15px !important; height: 15px !important; border-radius: 50% !important; background: #3d539f !important;">
+                                        &nbsp;
+                                    </div>
+                                </td>
+                                <td class="points"
+                                    style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important; padding-top: 10px !important; padding-left: 10px !important; width: 100% !important;">
+                                    Получить индивидуальный цифровой читательский билет, он же Номер Пуговицы
+                                </td>
+                            </tr>
+                            <tr class="tr-points"
+                                style="padding: 0 !important; margin: 0 5px !important; border-spacing: 0 !important; width: 100% !important; border-top: 1px solid #000000 !important;">
+                                <td class="marker__wrap"
+                                    style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important; padding-top: 10px !important; padding-left: 10px !important;">
+                                    <div class=" marker-blue"
+                                         style="width: 15px !important; height: 15px !important; border-radius: 50% !important; background: #3d539f !important;">
+                                        &nbsp;
+                                    </div>
+                                </td>
+                                <td class="points"
+                                    style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important; padding-top: 10px !important; padding-left: 10px !important; width: 100% !important;">
+                                    Начать использовать платформу и ее возможности - бесплатно и навсегда
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td style="width: 50%; background: #FD7949; padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                        <img src="https://inlibrary.ru/img/new_logo.png" alt=""/>
+                        <table style="margin: 0 10px; padding: 0 !important; border-spacing: 0 !important;">
+                            <tbody style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                            <tr style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                                <td style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                                    <div class="buble"
+                                         style="border-radius: 500px !important; background: #3d539f !important;">
+                                        <p class="buble__content"
+                                           style="font-size: 20px; padding: 20px 5px; margin: 10px !important; text-align: center !important; color: #ffffff !important;">
+                                            Два способа регистрации:</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                                <td style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                                    <div class="buble"
+                                         style="border-radius: 500px !important; background: #3d539f !important;">
+                                        <p class="buble__content"
+                                           style="text-align: left !important; margin: 10px 5px  !important; padding: 20px  5px  !important; color: #ffffff !important; font-size: 14px !important;">
+                                            1. Каждый сотрудник регистрируется самостоятельно</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                                <td style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                                    <div class="buble"
+                                         style="border-radius: 500px !important; background: #3d539f !important;">
+                                        <p class="buble__content"
+                                           style="text-align: left!important; margin: 10px 5px  !important; padding: 20px  5px !important; color: #ffffff !important; font-size: 14px !important;">
+                                            2. Регистрацию выполняет наш администратор сайта по списку</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+        <td style="background: #FD7949; vertical-align: center; padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+            <p style="font-size: 24px; color: #ffffff; text-align: center; padding: 10px 0; margin: 10px !important;">
+                Какой вариант для Вас удобнее?</p>
+        </td>
+    </tr>
+    <tr style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+        <td style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+            <table style="width: 100%; padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                <tbody>
+                <tr style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                    <td class="button button-red"
+                        style="width: 50%; color: #3d539f; padding: 0 !important; margin: 0 !important; border-spacing: 0 !important; text-align: center !important; vertical-align: center !important; background: #ffffff; transition: all ease 200ms !important;">
+                        <a class="link"
+                           style="padding: 15px 0 !important; margin: 0 !important; font-weight: bold !important; display: block !important; width: 100% !important; text-decoration: none !important; transition: all ease 200ms !important; color: #3d539f;"
+                           href="mailto:hub@inlibrary.ru" target="_blank">Написать директору БМИТ</a></td>
+                    <td class="button button-blue"
+                        style="width: 50%; color: #3d539f; padding: 0 !important; margin: 0 !important; border-spacing: 0 !important; text-align: center !important; vertical-align: center !important; background: #ffffff; transition: all ease 200ms !important;">
+                        <a class="link"
+                           style="padding: 15px 0 !important; margin: 0 !important; font-weight: bold !important; display: block !important; width: 100% !important; text-decoration: none !important; transition: all ease 200ms !important; color: #3d539f;"
+                           href="tel:89112166386" target="_blank">Позвонить директору БМИТ</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr style="background: #3d539f; color: #ffffff; padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+        <td style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+            <p style="margin: 10px !important;">Поделитесь, пожалуйста, какие еще задачи и запросы Вашей компании в
+                области чтения мы можем <strong>удовлетворить</strong>?</p>
+            <p style="margin: 10px !important; margin-top: 20px !important;">Платформа постоянно улучшается и
+                развивается, и мы будем рады прислушаться к потребностям читателей, стать полезным ресурсом для работы и
+                саморазвития.</p>
+            <p style="margin: 10px !important; margin-top: 20px !important;">Готова ответить на любые вопросы о <strong><a
+                    style="color: #ffffff; padding: 0 !important; margin: 0 !important;" title="БМИТ"
+                    href="http://inlibrary.ru" target="_blank" rel="noopener">Библиотеке Мастеров</a></strong>.<br/>
+                Хорошей рабочей недели!</p>
+        </td>
+    </tr>
+    <tr style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+        <td style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;"><a
+                style="padding: 0 !important; margin: 0 !important;" title="site" href="https://inlibrary.ru/site/login"
+                target="_blank" rel="noopener"> <img style="display: block;"
+                                                     src="http://app.makemail.ru/content/ffdf5ca819ed0fa211ad156e70b6cdf7.png"
+                                                     alt="" width="100%" border="0"/> </a></td>
+    </tr>
+    <tr style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+        <td style="background: #b3b3b3; height: 50px; padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+            <table style="width: 100%; padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                <tbody style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                <tr style="padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                    <td style="color: #f2f2f2; font-size: 12px; width: 70%; padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                        <p style="margin: 10px !important;">С почтением,<br/>Муравьева Ирина/Якушина Анна<br/>Директор/Специалист
+                            по работе с читателями<br/><a
+                                    style="color: #f2f2f2; text-decoration: none; padding: 0 !important; margin: 0 !important;"
+                                    title="БМИТ" href="http://inlibrary.ru" target="_blank" rel="noopener">ЧУ
+                                "Библиотека Мастеров&nbsp;Интеллектуального Труда"</a><br/>м.т. <a
+                                    style="color: #f2f2f2; text-decoration: none; padding: 0 !important; margin: 0 !important;"
+                                    title="БМИТ" href="tel:+79313515575" target="_blank" rel="noopener">+79313515575</a>
+                        </p>
+                    </td>
+                    <td style="width: 30%; vertical-align: bottom; text-align: right; padding: 0 !important; margin: 0 !important; border-spacing: 0 !important;">
+                        <a style="padding: 0 !important; padding-right: 5px !important; text-decoration: none!important; color: #2ba6cb; margin: 0 !important;"
+                           href="https://www.facebook.com/inLibrary.ru/"> <img
+                                style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: inherit; clear: both; display: inline; border: none;"
+                                src="http://app.makemail.ru/content/1ed7e604a5f7dfbd2f681a52ec78ecb0.png" alt=""
+                                align="inherit"/> </a></td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
+
